@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel= "stylesheet" href="style.css">
+        <title>
+        Family Book
+        </title>
+    </head>
+    <body>
+            <h1>
+                My Family Book
+            </h1>
+            <img id="family_img" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg" style="width: 30%" id="family_member_imge">
+        <h3 id="one"> 1. Family Name </h3> 
+        <button type="button" onclick="family()"> Next </button>
+        <script>
+            var names=[
+                "2. My Father (Harre Chauhaan)",
+                "3. My Mother(Neetu Chauhaan)",
+                "4. Me (Pratyaksha Chauhaan)",
+                "5. My Brother (Divik Chauhaan)"
+            ];
+    var images=[
+        "Father's_img.jpeg",
+        "Mother's_img.jpeg",
+        "img_of_me.jpeg",
+        "Divik's_img.jpeg",
+    ];
+    var i=0;
+    function family(){
+    document.getElementById("one").innerHTML = names[i];
+    document.getElementById("family_img").src = images[i];
+    i++;
+    if(i==4){
+        i=0;
+    }}
+    
+        </script>
+    </body>
+</html>
